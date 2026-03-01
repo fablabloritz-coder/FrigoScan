@@ -37,12 +37,7 @@
 - Affichage visuel des ingrédients disponibles/manquants
 - Ajout des ingrédients manquants à la liste de courses
 - Détection des allergènes
-
-### 📅 Menu de la semaine
-- Génération automatique (déjeuner + dîner, 7 jours)
-- Deux modes : avant ou après les courses
-- Respect des régimes alimentaires configurés
-- Navigation semaine par semaine
+- Sauvegarde de recettes favorites
 
 ### 🌿 Produits de saison
 - Fruits et légumes de saison en France, mois par mois
@@ -89,11 +84,10 @@ FrigoScan/
 │   ├── main.py               # Point d'entrée FastAPI
 │   ├── database.py           # Schéma SQLite, helpers
 │   ├── models.py             # Modèles Pydantic
-│   ├── routers/              # 9 routers API
+│   ├── routers/              # 8 routers API
 │   │   ├── scan.py           # Scan code-barres
 │   │   ├── fridge.py         # Gestion du frigo
 │   │   ├── recipes.py        # Recettes
-│   │   ├── menus.py          # Menu de la semaine
 │   │   ├── shopping.py       # Liste de courses
 │   │   ├── stats.py          # Statistiques
 │   │   ├── settings.py       # Réglages
@@ -114,7 +108,6 @@ FrigoScan/
         ├── manual-add.js     # Ajout manuel par catégorie
         ├── fridge.js         # Affichage frigo
         ├── recipes.js        # Recherche/suggestions recettes
-        ├── menus.js          # Menu de la semaine
         ├── seasonal.js       # Produits de saison
         ├── shopping.js       # Liste de courses
         ├── stats.js          # Statistiques
@@ -170,7 +163,6 @@ L'application expose une API REST complète :
 | `GET/POST /api/fridge/` | Liste / Ajoute des produits au frigo |
 | `POST /api/fridge/{id}/consume` | Consommer un produit |
 | `GET /api/recipes/suggest` | Suggestions de recettes |
-| `POST /api/menus/generate` | Générer le menu de la semaine |
 | `GET /api/seasonal/` | Produits de saison |
 | `GET/POST /api/shopping/` | Liste de courses |
 | `GET /api/stats/summary` | Statistiques de consommation |
