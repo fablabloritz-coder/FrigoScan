@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Frigo - FrigoScan</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background: #f5f5f5; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; }
+        h1 { color: #333; }
+        .status { padding: 10px; margin: 10px 0; border-radius: 4px; }
+        .success { background: #d4edda; color: #155724; }
+        .error { background: #f8d7da; color: #721c24; }
+        .warning { background: #fff3cd; color: #856404; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 4px; overflow-x: auto; }
+        #fridge-list { margin-top: 20px; }
+        .fridge-item { border: 1px solid #ddd; padding: 10px; margin: 5px 0; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 Test de diagnostic - Mon Frigo</h1>
+        <div id="status"></div>
+        <div id="results"></div>
+        <div id="fridge-list"></div>
+    </div>
+
+    <script>
+        const statusEl = document.getElementById('status');
+        const resultsEl = document.getElementById('results');
+        const fridgeListEl = document.getElementById('fridge-list');
+
+        function addStatus(message, type = 'success') {
+            const div = document.createElement('div');
+            div.className = `status ${type}`;
+            div.textContent = message;
+            statusEl.appendChild(div);
+        }
+
+        async function testFridge() {
+            try {
+                // Test 1: Appeler l'endpoint
+                addStatus('1. Appel de l\'endpoint /api/fridge/', 'warning');
+                const response = await fetch('http://localhost:8001/api/fridge/');
+                
+                if (!response.ok) {
+                    addStatus(`❌ Erreur HTTP: ${response.status}`, 'error');
+                    return;
+                }
+                addStatus(`✓ Status: ${response.status}`, 'success');
+
+                // Test 2: Parser JSON
+                addStatus('2. Parsing JSON...', 'warning');
+                const data = await response.json();
+                addStatus(`✓ JSON parsé correctement`, 'success');
+
+                // Test 3: Vérifier structure
+                addStatus('3. Vérification structure...', 'warning');
+                resultsEl.innerHTML = `<pre>${JSON.stringify(data, null, 2).substring(0, 500)}...</pre>`;
+
+                if (!data.success) {
+                    addStatus(`❌ success = false`, 'error');
+                    return;
+                }
+                addStatus(`✓ success = true`, 'success');
+
+                if (!data.items) {
+                    addStatus(`❌ Clé 'items' manquante! Clés présentes: ${Object.keys(data).join(', ')}`, 'error');
+                    return;
+                }
+                addStatus(`✓ Clé 'items' présente`, 'success');
+
+                if (!Array.isArray(data.items)) {
+                    addStatus(`❌ 'items' n'est pas un tableau: ${typeof data.items}`, 'error');
+                    return;
+                }
+                addStatus(`✓ 'items' est un tableau`, 'success');
+
+                addStatus(`✓ Nombre d'items: ${data.items.length}`, 'success');
+
+                // Test 4: Affichage
+                if (data.items.length === 0) {
+                    addStatus(`⚠️ FRIGO VIDE - Aucun item à afficher`, 'warning');
+                    fridgeListEl.innerHTML = '<p style="color: orange;">Le frigo est vide!</p>';
+                } else {
+                    addStatus(`4. Affichage des ${data.items.length} premiers items...`, 'warning');
+                    fridgeListEl.innerHTML = data.items.slice(0, 10).map(item => `
+                        <div class="fridge-item">
+                            <strong>${item.name}</strong>
+                            <span style="color: #666;"> - ${item.quantity} ${item.unit || ''}</span>
+                            <span style="float: right; color: #999;">${item.category || 'autre'}</span>
+                        </div>
+                    `).join('');
+                    addStatus(`✓ ${Math.min(10, data.items.length)} items affichés`, 'success');
+                }
+
+                // Test 5: Simulation exacte du code fridge.js
+                addStatus('5. Test logique fridge.js...', 'warning');
+                if (data.items.length === 0) {
+                    addStatus('→ Code exécuterait: empty.classList.remove("hidden")', 'warning');
+                } else {
+                    addStatus('→ Code exécuterait: empty.classList.add("hidden")', 'success');
+                    addStatus('→ Code exécuterait: list.innerHTML = ...', 'success');
+                }
+
+            } catch (error) {
+                addStatus(`❌ ERREUR: ${error.message}`, 'error');
+                console.error(error);
+            }
+        }
+
+        // Lancer le test au chargement
+        window.addEventListener('DOMContentLoaded', testFridge);
+    </script>
+</body>
+</html>

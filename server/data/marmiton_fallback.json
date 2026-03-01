@@ -5,19 +5,61 @@
     "prep_time": 20,
     "cook_time": 40,
     "servings": 4,
-    "ingredients": ["2 aubergines", "2 courgettes", "2 poivrons rouges", "4 tomates", "2 oignons", "3 gousses d'ail", "Huile d'olive", "Thym", "Sel et poivre"],
-    "steps": ["Découper les légumes", "Faire revenir l'oignon et l'ail", "Ajouter progressivement les légumes", "Ajouter le thym", "Laisser cuire 40 minutes", "Assaisonner et servir"],
-    "tags": ["Végétarien", "Légumes", "Français"]
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ratatouille_3.jpg",
+    "ingredients": [
+      "2 aubergines",
+      "2 courgettes",
+      "2 poivrons rouges",
+      "4 tomates",
+      "2 oignons",
+      "3 gousses d'ail",
+      "Huile d'olive",
+      "Thym",
+      "Sel et poivre"
+    ],
+    "steps": [
+      "DÃ©couper les lÃ©gumes",
+      "Faire revenir l'oignon et l'ail",
+      "Ajouter progressivement les lÃ©gumes",
+      "Ajouter le thym",
+      "Laisser cuire 40 minutes",
+      "Assaisonner et servir"
+    ],
+    "tags": [
+      "VÃ©gÃ©tarien",
+      "LÃ©gumes",
+      "FranÃ§ais"
+    ]
   },
   {
-    "title": "Pâtes Aglio e Olio",
+    "title": "PÃ¢tes Aglio e Olio",
     "difficulty": "facile",
     "prep_time": 5,
     "cook_time": 10,
     "servings": 4,
-    "ingredients": ["400g de pâtes", "10 gousses d'ail", "150ml d'huile d'olive", "Flocons de piment", "Persil frais", "Sel"],
-    "steps": ["Cuire les pâtes", "Faire revenir l'ail dans l'huile", "Égoutter les pâtes", "Mélanger", "Parsemer de persil", "Servir"],
-    "tags": ["Pâtes", "Végétarien", "Italien", "Rapide"]
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pasta_aglio_olio.jpg",
+    "ingredients": [
+      "400g de pÃ¢tes",
+      "10 gousses d'ail",
+      "150ml d'huile d'olive",
+      "Flocons de piment",
+      "Persil frais",
+      "Sel"
+    ],
+    "steps": [
+      "Cuire les pÃ¢tes",
+      "Faire revenir l'ail dans l'huile",
+      "Ã‰goutter les pÃ¢tes",
+      "MÃ©langer",
+      "Parsemer de persil",
+      "Servir"
+    ],
+    "tags": [
+      "PÃ¢tes",
+      "VÃ©gÃ©tarien",
+      "Italien",
+      "Rapide"
+    ]
   },
   {
     "title": "Salade de Tomates et Concombre",
@@ -25,59 +67,182 @@
     "prep_time": 10,
     "cook_time": 0,
     "servings": 4,
-    "ingredients": ["4 tomates", "1 concombre", "1 oignon rouge", "Olives noires", "Huile d'olive", "Vinaigre", "Sel et poivre"],
-    "steps": ["Découper les tomates et le concombre", "Ajouter l'oignon et les olives", "Verser l'huile et le vinaigre", "Mélanger et servir"],
-    "tags": ["Salade", "Végétarien", "Été", "Léger"]
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tomato_and_cucumber_salad.jpg",
+    "ingredients": [
+      "4 tomates",
+      "1 concombre",
+      "1 oignon rouge",
+      "Olives noires",
+      "Huile d'olive",
+      "Vinaigre",
+      "Sel et poivre"
+    ],
+    "steps": [
+      "DÃ©couper les tomates et le concombre",
+      "Ajouter l'oignon et les olives",
+      "Verser l'huile et le vinaigre",
+      "MÃ©langer et servir"
+    ],
+    "tags": [
+      "Salade",
+      "VÃ©gÃ©tarien",
+      "Ã‰tÃ©",
+      "LÃ©ger"
+    ]
   },
   {
-    "title": "Riz aux Légumes",
+    "title": "Riz aux LÃ©gumes",
     "difficulty": "facile",
     "prep_time": 10,
     "cook_time": 20,
     "servings": 4,
-    "ingredients": ["300g de riz", "200g de carottes", "150g de pois", "1 oignon", "2 gousses d'ail", "Bouillon de légumes", "Huile d'olive", "Sel et poivre"],
-    "steps": ["Faire revenir l'oignon et l'ail", "Ajouter le riz et mélanger", "Ajouter le bouillon", "Ajouter les légumes à mi-cuisson", "Cuire 15-20 minutes", "Servir"],
-    "tags": ["Riz", "Végétarien", "Facile", "Complet"]
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vegetable_fried_rice.jpg",
+    "ingredients": [
+      "300g de riz",
+      "200g de carottes",
+      "150g de pois",
+      "1 oignon",
+      "2 gousses d'ail",
+      "Bouillon de lÃ©gumes",
+      "Huile d'olive",
+      "Sel et poivre"
+    ],
+    "steps": [
+      "Faire revenir l'oignon et l'ail",
+      "Ajouter le riz et mÃ©langer",
+      "Ajouter le bouillon",
+      "Ajouter les lÃ©gumes Ã  mi-cuisson",
+      "Cuire 15-20 minutes",
+      "Servir"
+    ],
+    "tags": [
+      "Riz",
+      "VÃ©gÃ©tarien",
+      "Facile",
+      "Complet"
+    ]
   },
   {
-    "title": "Soupe de Légumes",
+    "title": "Soupe de LÃ©gumes",
     "difficulty": "facile",
     "prep_time": 15,
     "cook_time": 30,
     "servings": 4,
-    "ingredients": ["2 carottes", "2 courgettes", "1 oignon", "4 tomates", "1L de bouillon", "Persil", "Sel et poivre"],
-    "steps": ["Émincer les légumes", "Faire revenir l'oignon", "Ajouter les légumes", "Verser le bouillon", "Cuire 25-30 minutes", "Servir chaud"],
-    "tags": ["Soupe", "Végétarien", "Réconfortant"]
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vegetable_soup_1.jpg",
+    "ingredients": [
+      "2 carottes",
+      "2 courgettes",
+      "1 oignon",
+      "4 tomates",
+      "1L de bouillon",
+      "Persil",
+      "Sel et poivre"
+    ],
+    "steps": [
+      "Ã‰mincer les lÃ©gumes",
+      "Faire revenir l'oignon",
+      "Ajouter les lÃ©gumes",
+      "Verser le bouillon",
+      "Cuire 25-30 minutes",
+      "Servir chaud"
+    ],
+    "tags": [
+      "Soupe",
+      "VÃ©gÃ©tarien",
+      "RÃ©confortant"
+    ]
   },
   {
-    "title": "Poêlée de Champignons",
+    "title": "PoÃªlÃ©e de Champignons",
     "difficulty": "facile",
     "prep_time": 10,
     "cook_time": 15,
     "servings": 4,
-    "ingredients": ["500g de champignons", "2 oignons", "2 gousses d'ail", "Huile d'olive", "Thym", "Persil", "Sel et poivre"],
-    "steps": ["Nettoyer les champignons", "Faire revenir l'oignon et l'ail", "Ajouter les champignons", "Ajouter le thym", "Cuire 10-12 minutes", "Servir"],
-    "tags": ["Champignons", "Végétarien", "Entrée", "Français"]
+    "ingredients": [
+      "500g de champignons",
+      "2 oignons",
+      "2 gousses d'ail",
+      "Huile d'olive",
+      "Thym",
+      "Persil",
+      "Sel et poivre"
+    ],
+    "steps": [
+      "Nettoyer les champignons",
+      "Faire revenir l'oignon et l'ail",
+      "Ajouter les champignons",
+      "Ajouter le thym",
+      "Cuire 10-12 minutes",
+      "Servir"
+    ],
+    "tags": [
+      "Champignons",
+      "VÃ©gÃ©tarien",
+      "EntrÃ©e",
+      "FranÃ§ais"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chef_knife_and_fork.svg"
   },
   {
-    "title": "Pâtes Tomate et Basilic",
+    "title": "PÃ¢tes Tomate et Basilic",
     "difficulty": "facile",
     "prep_time": 10,
     "cook_time": 15,
     "servings": 4,
-    "ingredients": ["400g de pâtes", "400g de tomates", "4 gousses d'ail", "Basilic frais", "Huile d'olive", "Sel et poivre"],
-    "steps": ["Cuire les pâtes", "Faire revenir l'ail", "Ajouter les tomates", "Cuire 10 minutes", "Ajouter le basilic", "Mélanger et servir"],
-    "tags": ["Pâtes", "Tomate", "Végétarien", "Italien"]
+    "ingredients": [
+      "400g de pÃ¢tes",
+      "400g de tomates",
+      "4 gousses d'ail",
+      "Basilic frais",
+      "Huile d'olive",
+      "Sel et poivre"
+    ],
+    "steps": [
+      "Cuire les pÃ¢tes",
+      "Faire revenir l'ail",
+      "Ajouter les tomates",
+      "Cuire 10 minutes",
+      "Ajouter le basilic",
+      "MÃ©langer et servir"
+    ],
+    "tags": [
+      "PÃ¢tes",
+      "Tomate",
+      "VÃ©gÃ©tarien",
+      "Italien"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chef_knife_and_fork.svg"
   },
   {
-    "title": "Légumes Rôtis",
+    "title": "LÃ©gumes RÃ´tis",
     "difficulty": "facile",
     "prep_time": 15,
     "cook_time": 30,
     "servings": 4,
-    "ingredients": ["2 poivrons", "2 aubergines", "2 courgettes", "2 oignons", "Huile d'olive", "Thym et romarin", "Sel et poivre"],
-    "steps": ["Découper les légumes", "Les disposer sur una plaque", "Arroser d'huile", "Ajouter les herbes", "Rôtir 25-30 minutes", "Servir chaud ou froid"],
-    "tags": ["Légumes", "Végétarien", "Rôti", "Complet"]
+    "ingredients": [
+      "2 poivrons",
+      "2 aubergines",
+      "2 courgettes",
+      "2 oignons",
+      "Huile d'olive",
+      "Thym et romarin",
+      "Sel et poivre"
+    ],
+    "steps": [
+      "DÃ©couper les lÃ©gumes",
+      "Les disposer sur una plaque",
+      "Arroser d'huile",
+      "Ajouter les herbes",
+      "RÃ´tir 25-30 minutes",
+      "Servir chaud ou froid"
+    ],
+    "tags": [
+      "LÃ©gumes",
+      "VÃ©gÃ©tarien",
+      "RÃ´ti",
+      "Complet"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chef_knife_and_fork.svg"
   },
   {
     "title": "Omelette aux Herbes",
@@ -85,19 +250,58 @@
     "prep_time": 5,
     "cook_time": 5,
     "servings": 2,
-    "ingredients": ["4 œufs", "Persil frais", "Ciboulette", "Estragon", "Huile d'olive", "Sel et poivre"],
-    "steps": ["Battre les œufs", "Ajouter les fines herbes", "Faire chauffer l'huile", "Verser les œufs", "Plier l'omelette", "Servir"],
-    "tags": ["Œufs", "Rapide", "Petit-déjeuner", "Français"]
+    "ingredients": [
+      "4 Å“ufs",
+      "Persil frais",
+      "Ciboulette",
+      "Estragon",
+      "Huile d'olive",
+      "Sel et poivre"
+    ],
+    "steps": [
+      "Battre les Å“ufs",
+      "Ajouter les fines herbes",
+      "Faire chauffer l'huile",
+      "Verser les Å“ufs",
+      "Plier l'omelette",
+      "Servir"
+    ],
+    "tags": [
+      "Å’ufs",
+      "Rapide",
+      "Petit-dÃ©jeuner",
+      "FranÃ§ais"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Omelette.jpg"
   },
   {
-    "title": "Pâtes au Pesto de Menthe",
+    "title": "PÃ¢tes au Pesto de Menthe",
     "difficulty": "facile",
     "prep_time": 10,
     "cook_time": 10,
     "servings": 4,
-    "ingredients": ["400g de pâtes", "200g de menthe fraîche", "100g de noix", "3 gousses d'ail", "Huile d'olive", "Sel et poivre"],
-    "steps": ["Préparer le pesto avec menthe, ail et noix", "Cuire les pâtes", "Mélanger avec le pesto", "Verser l'huile", "Servir"],
-    "tags": ["Pâtes", "Végétarien", "Frais", "Rapide"]
+    "ingredients": [
+      "400g de pÃ¢tes",
+      "200g de menthe fraÃ®che",
+      "100g de noix",
+      "3 gousses d'ail",
+      "Huile d'olive",
+      "Sel et poivre"
+    ],
+    "steps": [
+      "PrÃ©parer le pesto avec menthe, ail et noix",
+      "Cuire les pÃ¢tes",
+      "MÃ©langer avec le pesto",
+      "Verser l'huile",
+      "Servir"
+    ],
+    "tags": [
+      "PÃ¢tes",
+      "VÃ©gÃ©tarien",
+      "Frais",
+      "Rapide"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chef_knife_and_fork.svg"
   },
   {
     "title": "Salade de Lentilles",
@@ -105,9 +309,31 @@
     "prep_time": 15,
     "cook_time": 25,
     "servings": 4,
-    "ingredients": ["250g de lentilles corail", "1 oignon rouge", "1 concombre", "2 tomates", "Huile d'olive", "Vinaigre", "Herbes", "Sel et poivre"],
-    "steps": ["Cuire les lentilles", "Découper les légumes", "Mélanger les lentilles et légumes", "Préparer la vinaigrette", "Verser et mélanger", "Servir froid"],
-    "tags": ["Salade", "Lentilles", "Végétarien", "Protéines"]
+    "ingredients": [
+      "250g de lentilles corail",
+      "1 oignon rouge",
+      "1 concombre",
+      "2 tomates",
+      "Huile d'olive",
+      "Vinaigre",
+      "Herbes",
+      "Sel et poivre"
+    ],
+    "steps": [
+      "Cuire les lentilles",
+      "DÃ©couper les lÃ©gumes",
+      "MÃ©langer les lentilles et lÃ©gumes",
+      "PrÃ©parer la vinaigrette",
+      "Verser et mÃ©langer",
+      "Servir froid"
+    ],
+    "tags": [
+      "Salade",
+      "Lentilles",
+      "VÃ©gÃ©tarien",
+      "ProtÃ©ines"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Salad.jpg"
   },
   {
     "title": "Risotto aux Champignons",
@@ -115,29 +341,91 @@
     "prep_time": 15,
     "cook_time": 25,
     "servings": 4,
-    "ingredients": ["300g de riz arborio", "300g de champignons", "1L de bouillon chaud", "1 oignon", "100ml de vin blanc", "Huile d'olive", "Sel et poivre"],
-    "steps": ["Faire revenir l'oignon", "Ajouter le riz et mélanger", "Verser le vin", "Ajouter progressivement le bouillon", "Ajouter les champignons", "Cuire jusqu'à crémeux", "Servir"],
-    "tags": ["Riz", "Élégant", "Végétarien", "Français"]
+    "ingredients": [
+      "300g de riz arborio",
+      "300g de champignons",
+      "1L de bouillon chaud",
+      "1 oignon",
+      "100ml de vin blanc",
+      "Huile d'olive",
+      "Sel et poivre"
+    ],
+    "steps": [
+      "Faire revenir l'oignon",
+      "Ajouter le riz et mÃ©langer",
+      "Verser le vin",
+      "Ajouter progressivement le bouillon",
+      "Ajouter les champignons",
+      "Cuire jusqu'Ã  crÃ©meux",
+      "Servir"
+    ],
+    "tags": [
+      "Riz",
+      "Ã‰lÃ©gant",
+      "VÃ©gÃ©tarien",
+      "FranÃ§ais"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chef_knife_and_fork.svg"
   },
   {
-    "title": "Salade de Pâtes",
+    "title": "Salade de PÃ¢tes",
     "difficulty": "facile",
     "prep_time": 15,
     "cook_time": 10,
     "servings": 4,
-    "ingredients": ["300g de pâtes courtes", "200g de tomates cerises", "1 concombre", "100g d'olives", "Roquette", "Huile d'olive", "Vinaigre", "Sel et poivre"],
-    "steps": ["Cuire et refroidir les pâtes", "Découper les légumes", "Mélanger tous les ingrédients", "Préparer la vinaigrette", "Verser et mélanger", "Servir"],
-    "tags": ["Salade", "Pâtes", "Végétarien", "Été"]
+    "ingredients": [
+      "300g de pÃ¢tes courtes",
+      "200g de tomates cerises",
+      "1 concombre",
+      "100g d'olives",
+      "Roquette",
+      "Huile d'olive",
+      "Vinaigre",
+      "Sel et poivre"
+    ],
+    "steps": [
+      "Cuire et refroidir les pÃ¢tes",
+      "DÃ©couper les lÃ©gumes",
+      "MÃ©langer tous les ingrÃ©dients",
+      "PrÃ©parer la vinaigrette",
+      "Verser et mÃ©langer",
+      "Servir"
+    ],
+    "tags": [
+      "Salade",
+      "PÃ¢tes",
+      "VÃ©gÃ©tarien",
+      "Ã‰tÃ©"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Salad.jpg"
   },
   {
-    "title": "Poêlée d'Épinards",
+    "title": "PoÃªlÃ©e d'Ã‰pinards",
     "difficulty": "facile",
     "prep_time": 5,
     "cook_time": 10,
     "servings": 4,
-    "ingredients": ["400g d'épinards frais", "2 gousses d'ail", "1 oignon", "Huile d'olive", "Sel, poivre et muscade"],
-    "steps": ["Faire revenir l'oignon et l'ail", "Ajouter les épinards", "Cuire jusqu'à tendres", "Assaisonner avec muscade", "Servir chaud"],
-    "tags": ["Épinards", "Légumes", "Végétarien", "Rapide"]
+    "ingredients": [
+      "400g d'Ã©pinards frais",
+      "2 gousses d'ail",
+      "1 oignon",
+      "Huile d'olive",
+      "Sel, poivre et muscade"
+    ],
+    "steps": [
+      "Faire revenir l'oignon et l'ail",
+      "Ajouter les Ã©pinards",
+      "Cuire jusqu'Ã  tendres",
+      "Assaisonner avec muscade",
+      "Servir chaud"
+    ],
+    "tags": [
+      "Ã‰pinards",
+      "LÃ©gumes",
+      "VÃ©gÃ©tarien",
+      "Rapide"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chef_knife_and_fork.svg"
   },
   {
     "title": "Gratin de Courges",
@@ -145,19 +433,61 @@
     "prep_time": 20,
     "cook_time": 45,
     "servings": 6,
-    "ingredients": ["1kg de courges", "300ml de bouillon", "2 oignons", "2 gousses d'ail", "Thym et romarin", "Huile d'olive", "Sel et poivre"],
-    "steps": ["Découper la courge", "Faire revenir oignon et ail", "Disposer la courge", "Verser le bouillon", "Ajouter les herbes", "Rôtir 40-45 minutes", "Servir chaud"],
-    "tags": ["Courges", "Automne", "Végétarien", "Réconfortant"]
+    "ingredients": [
+      "1kg de courges",
+      "300ml de bouillon",
+      "2 oignons",
+      "2 gousses d'ail",
+      "Thym et romarin",
+      "Huile d'olive",
+      "Sel et poivre"
+    ],
+    "steps": [
+      "DÃ©couper la courge",
+      "Faire revenir oignon et ail",
+      "Disposer la courge",
+      "Verser le bouillon",
+      "Ajouter les herbes",
+      "RÃ´tir 40-45 minutes",
+      "Servir chaud"
+    ],
+    "tags": [
+      "Courges",
+      "Automne",
+      "VÃ©gÃ©tarien",
+      "RÃ©confortant"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chef_knife_and_fork.svg"
   },
   {
-    "title": "Brocoli Rôti",
+    "title": "Brocoli RÃ´ti",
     "difficulty": "facile",
     "prep_time": 10,
     "cook_time": 20,
     "servings": 4,
-    "ingredients": ["500g de brocoli", "4 gousses d'ail", "Huile d'olive", "Jus de citron", "Sel et poivre"],
-    "steps": ["Tailler le brocoli", "Le mettre sur une plaque", "Arroser d'huile", "Ajouter l'ail", "Rôtir 18-20 minutes", "Verser du citron", "Servir"],
-    "tags": ["Brocoli", "Légumes", "Végétarien", "Sain"]
+    "ingredients": [
+      "500g de brocoli",
+      "4 gousses d'ail",
+      "Huile d'olive",
+      "Jus de citron",
+      "Sel et poivre"
+    ],
+    "steps": [
+      "Tailler le brocoli",
+      "Le mettre sur une plaque",
+      "Arroser d'huile",
+      "Ajouter l'ail",
+      "RÃ´tir 18-20 minutes",
+      "Verser du citron",
+      "Servir"
+    ],
+    "tags": [
+      "Brocoli",
+      "LÃ©gumes",
+      "VÃ©gÃ©tarien",
+      "Sain"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chef_knife_and_fork.svg"
   },
   {
     "title": "Soupe Minestrone",
@@ -165,29 +495,96 @@
     "prep_time": 20,
     "cook_time": 30,
     "servings": 4,
-    "ingredients": ["2 carottes", "2 courgettes", "200g de tomates", "100g de pâtes petites", "1 oignon", "1L de bouillon", "Basil", "Huile d'olive", "Sel et poivre"],
-    "steps": ["Faire revenir l'oignon", "Ajouter les légumes", "Verser le bouillon", "Ajouter les pâtes", "Cuire 20 minutes", "Ajouter le basil", "Servir"],
-    "tags": ["Soupe", "Pâtes", "Végétarien", "Italien"]
+    "ingredients": [
+      "2 carottes",
+      "2 courgettes",
+      "200g de tomates",
+      "100g de pÃ¢tes petites",
+      "1 oignon",
+      "1L de bouillon",
+      "Basil",
+      "Huile d'olive",
+      "Sel et poivre"
+    ],
+    "steps": [
+      "Faire revenir l'oignon",
+      "Ajouter les lÃ©gumes",
+      "Verser le bouillon",
+      "Ajouter les pÃ¢tes",
+      "Cuire 20 minutes",
+      "Ajouter le basil",
+      "Servir"
+    ],
+    "tags": [
+      "Soupe",
+      "PÃ¢tes",
+      "VÃ©gÃ©tarien",
+      "Italien"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Soup_in_a_bowl.jpg"
   },
   {
-    "title": "Poêlée Asiatique",
+    "title": "PoÃªlÃ©e Asiatique",
     "difficulty": "facile",
     "prep_time": 15,
     "cook_time": 15,
     "servings": 4,
-    "ingredients": ["300g de brocoli", "200g de poivrons", "200g de champignons", "100g de germes de soja", "3 gousses d'ail", "2 c.à.s de sauce soja", "1 c.à.s de gingembre", "Huile d'arachide", "Sel et poivre"],
-    "steps": ["Émincer tous les légumes", "Faire chauffer l'huile", "Ajouter les légumes", "Ajouter sauce soja et gingembre", "Cuire 12-15 minutes", "Servir chaud"],
-    "tags": ["Asiatique", "Légumes", "Végétarien", "Rapide"]
+    "ingredients": [
+      "300g de brocoli",
+      "200g de poivrons",
+      "200g de champignons",
+      "100g de germes de soja",
+      "3 gousses d'ail",
+      "2 c.Ã .s de sauce soja",
+      "1 c.Ã .s de gingembre",
+      "Huile d'arachide",
+      "Sel et poivre"
+    ],
+    "steps": [
+      "Ã‰mincer tous les lÃ©gumes",
+      "Faire chauffer l'huile",
+      "Ajouter les lÃ©gumes",
+      "Ajouter sauce soja et gingembre",
+      "Cuire 12-15 minutes",
+      "Servir chaud"
+    ],
+    "tags": [
+      "Asiatique",
+      "LÃ©gumes",
+      "VÃ©gÃ©tarien",
+      "Rapide"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chef_knife_and_fork.svg"
   },
   {
-    "title": "Haricots à la Tomate",
+    "title": "Haricots Ã  la Tomate",
     "difficulty": "moyen",
     "prep_time": 15,
     "cook_time": 30,
     "servings": 4,
-    "ingredients": ["400g de haricots secs (trempés)", "400g de tomates", "1 oignon", "3 gousses d'ail", "1 c.à.c de cumin", "Huile d'olive", "Sel et poivre"],
-    "steps": ["Faire revenir oignon et ail", "Ajouter les haricots", "Ajouter les tomates et cumin", "Cuire 25-30 minutes", "Assaisonner", "Servir chaud"],
-    "tags": ["Haricots", "Végétarien", "Riche en protéines"]
+    "ingredients": [
+      "400g de haricots secs (trempÃ©s)",
+      "400g de tomates",
+      "1 oignon",
+      "3 gousses d'ail",
+      "1 c.Ã .c de cumin",
+      "Huile d'olive",
+      "Sel et poivre"
+    ],
+    "steps": [
+      "Faire revenir oignon et ail",
+      "Ajouter les haricots",
+      "Ajouter les tomates et cumin",
+      "Cuire 25-30 minutes",
+      "Assaisonner",
+      "Servir chaud"
+    ],
+    "tags": [
+      "Haricots",
+      "VÃ©gÃ©tarien",
+      "Riche en protÃ©ines"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chef_knife_and_fork.svg"
   },
   {
     "title": "Quiche aux Poireaux",
@@ -195,99 +592,291 @@
     "prep_time": 20,
     "cook_time": 35,
     "servings": 6,
-    "ingredients": ["1 pâte brisée", "4 poireaux", "200ml de crème", "3 œufs", "100g d'emmental", "Sel et poivre"],
-    "steps": ["Émincer les poireaux", "Faire revenir les poireaux", "Disposer dans la pâte", "Mélanger œufs et crème", "Verser et parsemer du fromage", "Cuire 30-35 minutes"],
-    "tags": ["Quiche", "Poireaux", "Œufs"]
+    "ingredients": [
+      "1 pÃ¢te brisÃ©e",
+      "4 poireaux",
+      "200ml de crÃ¨me",
+      "3 Å“ufs",
+      "100g d'emmental",
+      "Sel et poivre"
+    ],
+    "steps": [
+      "Ã‰mincer les poireaux",
+      "Faire revenir les poireaux",
+      "Disposer dans la pÃ¢te",
+      "MÃ©langer Å“ufs et crÃ¨me",
+      "Verser et parsemer du fromage",
+      "Cuire 30-35 minutes"
+    ],
+    "tags": [
+      "Quiche",
+      "Poireaux",
+      "Å’ufs"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Quiche.jpg"
   },
   {
-    "title": "Pâtes Carbonara Allégée",
+    "title": "PÃ¢tes Carbonara AllÃ©gÃ©e",
     "difficulty": "moyen",
     "prep_time": 10,
     "cook_time": 12,
     "servings": 4,
-    "ingredients": ["400g de pâtes", "200g de champignons", "4 œufs", "100g de fromage", "Persil", "Huile d'olive", "Sel et poivre"],
-    "steps": ["Cuire les pâtes", "Préparer le mélange œufs-fromage", "Faire revenir les champignons", "Mélanger tout", "Servir immédiatement"],
-    "tags": ["Pâtes", "Œufs", "Rapide"]
+    "ingredients": [
+      "400g de pÃ¢tes",
+      "200g de champignons",
+      "4 Å“ufs",
+      "100g de fromage",
+      "Persil",
+      "Huile d'olive",
+      "Sel et poivre"
+    ],
+    "steps": [
+      "Cuire les pÃ¢tes",
+      "PrÃ©parer le mÃ©lange Å“ufs-fromage",
+      "Faire revenir les champignons",
+      "MÃ©langer tout",
+      "Servir immÃ©diatement"
+    ],
+    "tags": [
+      "PÃ¢tes",
+      "Å’ufs",
+      "Rapide"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chef_knife_and_fork.svg"
   },
   {
-    "title": "Velouté de Courgettes",
+    "title": "VeloutÃ© de Courgettes",
     "difficulty": "facile",
     "prep_time": 15,
     "cook_time": 25,
     "servings": 4,
-    "ingredients": ["6 courgettes", "1 oignon", "750ml de bouillon", "200ml de crème", "2 gousses d'ail", "Sel et poivre"],
-    "steps": ["Découper les courgettes", "Faire revenir oignon et ail", "Ajouter les courgettes et bouillon", "Cuire 20 minutes", "Mixer", "Ajouter crème", "Servir chaud"],
-    "tags": ["Soupe", "Velouté", "Courgettes"]
+    "ingredients": [
+      "6 courgettes",
+      "1 oignon",
+      "750ml de bouillon",
+      "200ml de crÃ¨me",
+      "2 gousses d'ail",
+      "Sel et poivre"
+    ],
+    "steps": [
+      "DÃ©couper les courgettes",
+      "Faire revenir oignon et ail",
+      "Ajouter les courgettes et bouillon",
+      "Cuire 20 minutes",
+      "Mixer",
+      "Ajouter crÃ¨me",
+      "Servir chaud"
+    ],
+    "tags": [
+      "Soupe",
+      "VeloutÃ©",
+      "Courgettes"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chef_knife_and_fork.svg"
   },
   {
-    "title": "Tofu Sauté aux Légumes",
+    "title": "Tofu SautÃ© aux LÃ©gumes",
     "difficulty": "facile",
     "prep_time": 15,
     "cook_time": 15,
     "servings": 4,
-    "ingredients": ["400g de tofu", "200g de brocoli", "150g de poivrons", "100g de champignons", "3 gousses d'ail", "Sauce soja", "Huile", "Gingembre"],
-    "steps": ["Découper le tofu en cubes", "Émincer les légumes", "Faire revenir tofu et légumes", "Ajouter sauce soja et gingembre", "Cuire 12 minutes", "Servir"],
-    "tags": ["Tofu", "Asiatique", "Sain"]
+    "ingredients": [
+      "400g de tofu",
+      "200g de brocoli",
+      "150g de poivrons",
+      "100g de champignons",
+      "3 gousses d'ail",
+      "Sauce soja",
+      "Huile",
+      "Gingembre"
+    ],
+    "steps": [
+      "DÃ©couper le tofu en cubes",
+      "Ã‰mincer les lÃ©gumes",
+      "Faire revenir tofu et lÃ©gumes",
+      "Ajouter sauce soja et gingembre",
+      "Cuire 12 minutes",
+      "Servir"
+    ],
+    "tags": [
+      "Tofu",
+      "Asiatique",
+      "Sain"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tofu.jpg"
   },
   {
-    "title": "Pâtes aux Quatre Fromages",
+    "title": "PÃ¢tes aux Quatre Fromages",
     "difficulty": "facile",
     "prep_time": 5,
     "cook_time": 12,
     "servings": 4,
-    "ingredients": ["400g de pâtes", "100g de fromage blanc", "50g de gorgonzola", "50g d'emmental", "50g de ricotta", "Noix concassées", "Poivre"],
-    "steps": ["Cuire les pâtes", "Mélanger les fromages", "Réchauffer avec les pâtes", "Ajouter les noix", "Servir"],
-    "tags": ["Pâtes", "Fromage", "Riche"]
+    "ingredients": [
+      "400g de pÃ¢tes",
+      "100g de fromage blanc",
+      "50g de gorgonzola",
+      "50g d'emmental",
+      "50g de ricotta",
+      "Noix concassÃ©es",
+      "Poivre"
+    ],
+    "steps": [
+      "Cuire les pÃ¢tes",
+      "MÃ©langer les fromages",
+      "RÃ©chauffer avec les pÃ¢tes",
+      "Ajouter les noix",
+      "Servir"
+    ],
+    "tags": [
+      "PÃ¢tes",
+      "Fromage",
+      "Riche"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chef_knife_and_fork.svg"
   },
   {
-    "title": "Riz Pilaf aux Légumes",
+    "title": "Riz Pilaf aux LÃ©gumes",
     "difficulty": "moyen",
     "prep_time": 15,
     "cook_time": 25,
     "servings": 4,
-    "ingredients": ["300g de riz basmati", "1 oignon", "2 carottes", "150g de pois", "750ml de bouillon", "Huile d'olive", "Épices"],
-    "steps": ["Faire revenir le riz et oignon", "Ajouter le bouillon", "Ajouter les légumes à mi-cuisson", "Cuire 18 minutes", "Laisser reposer", "Servir"],
-    "tags": ["Riz", "Pilaf", "Complet"]
+    "ingredients": [
+      "300g de riz basmati",
+      "1 oignon",
+      "2 carottes",
+      "150g de pois",
+      "750ml de bouillon",
+      "Huile d'olive",
+      "Ã‰pices"
+    ],
+    "steps": [
+      "Faire revenir le riz et oignon",
+      "Ajouter le bouillon",
+      "Ajouter les lÃ©gumes Ã  mi-cuisson",
+      "Cuire 18 minutes",
+      "Laisser reposer",
+      "Servir"
+    ],
+    "tags": [
+      "Riz",
+      "Pilaf",
+      "Complet"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamed_white_rice.jpg"
   },
   {
-    "title": "Courges Rôties aux Herbes",
+    "title": "Courges RÃ´ties aux Herbes",
     "difficulty": "facile",
     "prep_time": 15,
     "cook_time": 35,
     "servings": 4,
-    "ingredients": ["800g de courges", "Thym et romarin", "Huile d'olive", "4 gousses d'ail", "Sel et poivre"],
-    "steps": ["Découper la courge", "Mélanger avec huile et herbes", "Disposer sur plaque", "Rôtir 30-35 minutes", "Servir chaud"],
-    "tags": ["Courges", "Rôti", "Herbes"]
+    "ingredients": [
+      "800g de courges",
+      "Thym et romarin",
+      "Huile d'olive",
+      "4 gousses d'ail",
+      "Sel et poivre"
+    ],
+    "steps": [
+      "DÃ©couper la courge",
+      "MÃ©langer avec huile et herbes",
+      "Disposer sur plaque",
+      "RÃ´tir 30-35 minutes",
+      "Servir chaud"
+    ],
+    "tags": [
+      "Courges",
+      "RÃ´ti",
+      "Herbes"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chef_knife_and_fork.svg"
   },
   {
-    "title": "Pâtes aux Légumes d'Été",
+    "title": "PÃ¢tes aux LÃ©gumes d'Ã‰tÃ©",
     "difficulty": "facile",
     "prep_time": 15,
     "cook_time": 12,
     "servings": 4,
-    "ingredients": ["400g de pâtes", "2 tomates", "1 courgette", "1 aubergine", "2 oignons", "Basil frais", "Huile d'olive"],
-    "steps": ["Cuire les pâtes", "Préparer les légumes", "Faire revenir légumes et herbes", "Mélanger avec pâtes", "Servir avec basil"],
-    "tags": ["Pâtes", "Été", "Légumes"]
+    "ingredients": [
+      "400g de pÃ¢tes",
+      "2 tomates",
+      "1 courgette",
+      "1 aubergine",
+      "2 oignons",
+      "Basil frais",
+      "Huile d'olive"
+    ],
+    "steps": [
+      "Cuire les pÃ¢tes",
+      "PrÃ©parer les lÃ©gumes",
+      "Faire revenir lÃ©gumes et herbes",
+      "MÃ©langer avec pÃ¢tes",
+      "Servir avec basil"
+    ],
+    "tags": [
+      "PÃ¢tes",
+      "Ã‰tÃ©",
+      "LÃ©gumes"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chef_knife_and_fork.svg"
   },
   {
-    "title": "Lentilles aux Épices",
+    "title": "Lentilles aux Ã‰pices",
     "difficulty": "moyen",
     "prep_time": 15,
     "cook_time": 30,
     "servings": 4,
-    "ingredients": ["250g de lentilles", "1 oignon", "2 tomates", "1 c.à.c de curcuma", "1 c.à.c de cumin", "2 gousses d'ail", "Huile d'olive"],
-    "steps": ["Faire revenir oignon et ail", "Ajouter épices", "Ajouter lentilles et tomates", "Cuire 25-30 minutes", "Assaisonner", "Servir"],
-    "tags": ["Lentilles", "Épices", "Protéines"]
+    "ingredients": [
+      "250g de lentilles",
+      "1 oignon",
+      "2 tomates",
+      "1 c.Ã .c de curcuma",
+      "1 c.Ã .c de cumin",
+      "2 gousses d'ail",
+      "Huile d'olive"
+    ],
+    "steps": [
+      "Faire revenir oignon et ail",
+      "Ajouter Ã©pices",
+      "Ajouter lentilles et tomates",
+      "Cuire 25-30 minutes",
+      "Assaisonner",
+      "Servir"
+    ],
+    "tags": [
+      "Lentilles",
+      "Ã‰pices",
+      "ProtÃ©ines"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chef_knife_and_fork.svg"
   },
   {
-    "title": "Pâtes Pesto Maison",
+    "title": "PÃ¢tes Pesto Maison",
     "difficulty": "moyen",
     "prep_time": 15,
     "cook_time": 10,
     "servings": 4,
-    "ingredients": ["400g de pâtes", "150g de basilic frais", "50g de pignons", "50g de parmesan", "100ml d'huile d'olive", "2 gousses d'ail"],
-    "steps": ["Préparer le pesto au mixer", "Cuire les pâtes", "Ajouter l'eau de cuisson au pesto", "Mélanger pâtes et pesto", "Servir"],
-    "tags": ["Pâtes", "Pesto", "Frais"]
+    "ingredients": [
+      "400g de pÃ¢tes",
+      "150g de basilic frais",
+      "50g de pignons",
+      "50g de parmesan",
+      "100ml d'huile d'olive",
+      "2 gousses d'ail"
+    ],
+    "steps": [
+      "PrÃ©parer le pesto au mixer",
+      "Cuire les pÃ¢tes",
+      "Ajouter l'eau de cuisson au pesto",
+      "MÃ©langer pÃ¢tes et pesto",
+      "Servir"
+    ],
+    "tags": [
+      "PÃ¢tes",
+      "Pesto",
+      "Frais"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chef_knife_and_fork.svg"
   },
   {
     "title": "Soupe de Carottes et Gingembre",
@@ -295,9 +884,29 @@
     "prep_time": 15,
     "cook_time": 25,
     "servings": 4,
-    "ingredients": ["8 carottes", "1L de bouillon", "1 oignon", "2 c.à.s de gingembre frais", "200ml de crème", "Sel et poivre"],
-    "steps": ["Émincer les légumes", "Faire revenir oignon et gingembre", "Ajouter carottes et bouillon", "Cuire 20 minutes", "Mixer", "Ajouter crème", "Servir"],
-    "tags": ["Soupe", "Carottes", "Gingembre"]
+    "ingredients": [
+      "8 carottes",
+      "1L de bouillon",
+      "1 oignon",
+      "2 c.Ã .s de gingembre frais",
+      "200ml de crÃ¨me",
+      "Sel et poivre"
+    ],
+    "steps": [
+      "Ã‰mincer les lÃ©gumes",
+      "Faire revenir oignon et gingembre",
+      "Ajouter carottes et bouillon",
+      "Cuire 20 minutes",
+      "Mixer",
+      "Ajouter crÃ¨me",
+      "Servir"
+    ],
+    "tags": [
+      "Soupe",
+      "Carottes",
+      "Gingembre"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Soup_in_a_bowl.jpg"
   },
   {
     "title": "Riz aux Champignons",
@@ -305,9 +914,28 @@
     "prep_time": 10,
     "cook_time": 20,
     "servings": 4,
-    "ingredients": ["300g de riz arborio", "300g de champignons", "1 oignon", "750ml de bouillon", "100ml de vin blanc", "Persil"],
-    "steps": ["Faire revenir oignon et champignons", "Ajouter le riz", "Verser le vin et bouillon progressivement", "Cuire 15-18 minutes", "Parsemer de persil", "Servir"],
-    "tags": ["Riz", "Champignons", "Français"]
+    "ingredients": [
+      "300g de riz arborio",
+      "300g de champignons",
+      "1 oignon",
+      "750ml de bouillon",
+      "100ml de vin blanc",
+      "Persil"
+    ],
+    "steps": [
+      "Faire revenir oignon et champignons",
+      "Ajouter le riz",
+      "Verser le vin et bouillon progressivement",
+      "Cuire 15-18 minutes",
+      "Parsemer de persil",
+      "Servir"
+    ],
+    "tags": [
+      "Riz",
+      "Champignons",
+      "FranÃ§ais"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamed_white_rice.jpg"
   },
   {
     "title": "Falafel Maison",
@@ -315,9 +943,26 @@
     "prep_time": 20,
     "cook_time": 20,
     "servings": 4,
-    "ingredients": ["400g de pois chiches cuits", "1 oignon", "4 gousses d'ail", "Persil et coriandre", "1 c.à.c de cumin", "Huile arachide"],
-    "steps": ["Mixer les pois chiches avec épices", "Former des boules", "Faire frire dans l'huile", "Égoutter et servir avec sauce tahini"],
-    "tags": ["Falafel", "Moyen-Orient", "Protéines"]
+    "ingredients": [
+      "400g de pois chiches cuits",
+      "1 oignon",
+      "4 gousses d'ail",
+      "Persil et coriandre",
+      "1 c.Ã .c de cumin",
+      "Huile arachide"
+    ],
+    "steps": [
+      "Mixer les pois chiches avec Ã©pices",
+      "Former des boules",
+      "Faire frire dans l'huile",
+      "Ã‰goutter et servir avec sauce tahini"
+    ],
+    "tags": [
+      "Falafel",
+      "Moyen-Orient",
+      "ProtÃ©ines"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chef_knife_and_fork.svg"
   },
   {
     "title": "Omelette Champignons Fromage",
@@ -325,49 +970,136 @@
     "prep_time": 5,
     "cook_time": 8,
     "servings": 2,
-    "ingredients": ["4 œufs", "150g de champignons", "100g d'emmental", "1 oignon", "Huile d'olive", "Sel et poivre"],
-    "steps": ["Faire revenir champignons et oignon", "Battre les œufs", "Cuire l'omelette", "Ajouter garniture et fromage", "Plier et servir"],
-    "tags": ["Œufs", "Champignons", "Petit-déjeuner"]
+    "ingredients": [
+      "4 Å“ufs",
+      "150g de champignons",
+      "100g d'emmental",
+      "1 oignon",
+      "Huile d'olive",
+      "Sel et poivre"
+    ],
+    "steps": [
+      "Faire revenir champignons et oignon",
+      "Battre les Å“ufs",
+      "Cuire l'omelette",
+      "Ajouter garniture et fromage",
+      "Plier et servir"
+    ],
+    "tags": [
+      "Å’ufs",
+      "Champignons",
+      "Petit-dÃ©jeuner"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Omelette.jpg"
   },
   {
-    "title": "Couscous aux Légumes",
+    "title": "Couscous aux LÃ©gumes",
     "difficulty": "facile",
     "prep_time": 10,
     "cook_time": 15,
     "servings": 4,
-    "ingredients": ["300g de couscous", "400ml de bouillon", "2 carottes", "1 courgette", "150g de pois chiches", "Huile d'olive"],
-    "steps": ["Verser bouillon chaud sur couscous", "Laisser reposer 5 minutes", "Ajouter légumes revenus", "Aérer avec fourchette", "Servir"],
-    "tags": ["Couscous", "Légumes", "Rapide"]
+    "ingredients": [
+      "300g de couscous",
+      "400ml de bouillon",
+      "2 carottes",
+      "1 courgette",
+      "150g de pois chiches",
+      "Huile d'olive"
+    ],
+    "steps": [
+      "Verser bouillon chaud sur couscous",
+      "Laisser reposer 5 minutes",
+      "Ajouter lÃ©gumes revenus",
+      "AÃ©rer avec fourchette",
+      "Servir"
+    ],
+    "tags": [
+      "Couscous",
+      "LÃ©gumes",
+      "Rapide"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Couscous.jpg"
   },
   {
-    "title": "Assiette Complète Tofu",
+    "title": "Assiette ComplÃ¨te Tofu",
     "difficulty": "moyen",
     "prep_time": 20,
     "cook_time": 15,
     "servings": 4,
-    "ingredients": ["400g de tofu fumé", "200g de riz", "200g de brocoli", "1 carotte", "1 c.à.s de sauce soja", "Gingembre", "Ail"],
-    "steps": ["Cuire le riz", "Stir-fry tofu et légumes avec épices", "Servir en assiette équilibrée"],
-    "tags": ["Tofu", "Équilibré", "Complet"]
+    "ingredients": [
+      "400g de tofu fumÃ©",
+      "200g de riz",
+      "200g de brocoli",
+      "1 carotte",
+      "1 c.Ã .s de sauce soja",
+      "Gingembre",
+      "Ail"
+    ],
+    "steps": [
+      "Cuire le riz",
+      "Stir-fry tofu et lÃ©gumes avec Ã©pices",
+      "Servir en assiette Ã©quilibrÃ©e"
+    ],
+    "tags": [
+      "Tofu",
+      "Ã‰quilibrÃ©",
+      "Complet"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tofu.jpg"
   },
   {
-    "title": "Pâtes à la Crème de Champignons",
+    "title": "PÃ¢tes Ã  la CrÃ¨me de Champignons",
     "difficulty": "moyen",
     "prep_time": 10,
     "cook_time": 15,
     "servings": 4,
-    "ingredients": ["400g de pâtes", "400g de champignons", "200ml de crème", "2 gousses d'ail", "1 oignon", "Thym"],
-    "steps": ["Cuire les pâtes", "Faire revenir champignons et aromates", "Ajouter crème et thym", "Mélanger avec pâtes", "Servir"],
-    "tags": ["Pâtes", "Crème", "Français"]
+    "ingredients": [
+      "400g de pÃ¢tes",
+      "400g de champignons",
+      "200ml de crÃ¨me",
+      "2 gousses d'ail",
+      "1 oignon",
+      "Thym"
+    ],
+    "steps": [
+      "Cuire les pÃ¢tes",
+      "Faire revenir champignons et aromates",
+      "Ajouter crÃ¨me et thym",
+      "MÃ©langer avec pÃ¢tes",
+      "Servir"
+    ],
+    "tags": [
+      "PÃ¢tes",
+      "CrÃ¨me",
+      "FranÃ§ais"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chef_knife_and_fork.svg"
   },
   {
-    "title": "Brocoli Amande Rôti",
+    "title": "Brocoli Amande RÃ´ti",
     "difficulty": "facile",
     "prep_time": 10,
     "cook_time": 20,
     "servings": 4,
-    "ingredients": ["600g de brocoli", "100g d'amandes effilées", "4 gousses d'ail", "Huile d'olive", "Sel et poivre"],
-    "steps": ["Tailler le brocoli", "Mélanger avec huile, ail et amandes", "Rôtir 18-20 minutes", "Servir"],
-    "tags": ["Brocoli", "Amande", "Sain"]
+    "ingredients": [
+      "600g de brocoli",
+      "100g d'amandes effilÃ©es",
+      "4 gousses d'ail",
+      "Huile d'olive",
+      "Sel et poivre"
+    ],
+    "steps": [
+      "Tailler le brocoli",
+      "MÃ©langer avec huile, ail et amandes",
+      "RÃ´tir 18-20 minutes",
+      "Servir"
+    ],
+    "tags": [
+      "Brocoli",
+      "Amande",
+      "Sain"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chef_knife_and_fork.svg"
   },
   {
     "title": "Lentilles Corail Rapides",
@@ -375,69 +1107,196 @@
     "prep_time": 10,
     "cook_time": 15,
     "servings": 4,
-    "ingredients": ["250g de lentilles corail", "1 oignon", "2 tomates", "1L de bouillon", "Thym", "Huile d'olive"],
-    "steps": ["Faire revenir oignon", "Ajouter lentilles corail et bouillon", "Ajouter tomates et thym", "Cuire 12-15 minutes", "Servir"],
-    "tags": ["Lentilles", "Rapide", "Protéines"]
+    "ingredients": [
+      "250g de lentilles corail",
+      "1 oignon",
+      "2 tomates",
+      "1L de bouillon",
+      "Thym",
+      "Huile d'olive"
+    ],
+    "steps": [
+      "Faire revenir oignon",
+      "Ajouter lentilles corail et bouillon",
+      "Ajouter tomates et thym",
+      "Cuire 12-15 minutes",
+      "Servir"
+    ],
+    "tags": [
+      "Lentilles",
+      "Rapide",
+      "ProtÃ©ines"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chef_knife_and_fork.svg"
   },
   {
-    "title": "Omelette aux Épinards",
+    "title": "Omelette aux Ã‰pinards",
     "difficulty": "facile",
     "prep_time": 5,
     "cook_time": 8,
     "servings": 2,
-    "ingredients": ["4 œufs", "200g d'épinards frais", "50g de fromage", "1 oignon", "Huile d'olive", "Sel et poivre"],
-    "steps": ["Faire revenir épinards et oignon", "Battre les œufs", "Cuire l'omelette", "Garnir et servir"],
-    "tags": ["Œufs", "Épinards", "Nutritif"]
+    "ingredients": [
+      "4 Å“ufs",
+      "200g d'Ã©pinards frais",
+      "50g de fromage",
+      "1 oignon",
+      "Huile d'olive",
+      "Sel et poivre"
+    ],
+    "steps": [
+      "Faire revenir Ã©pinards et oignon",
+      "Battre les Å“ufs",
+      "Cuire l'omelette",
+      "Garnir et servir"
+    ],
+    "tags": [
+      "Å’ufs",
+      "Ã‰pinards",
+      "Nutritif"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Omelette.jpg"
   },
   {
-    "title": "Pois Chiches Rôtis",
+    "title": "Pois Chiches RÃ´tis",
     "difficulty": "facile",
     "prep_time": 10,
     "cook_time": 30,
     "servings": 4,
-    "ingredients": ["400g de pois chiches cuits", "2 c.à.s d'huile d'olive", "1 c.à.c de paprika", "1 c.à.c de cumin", "Sel"],
-    "steps": ["Sécher les pois chiches", "Les mélanger avec épices", "Rôtir 25-30 minutes en remuant", "Laisser refroidir", "Servir"],
-    "tags": ["Pois Chiches", "Snack", "Protéines"]
+    "ingredients": [
+      "400g de pois chiches cuits",
+      "2 c.Ã .s d'huile d'olive",
+      "1 c.Ã .c de paprika",
+      "1 c.Ã .c de cumin",
+      "Sel"
+    ],
+    "steps": [
+      "SÃ©cher les pois chiches",
+      "Les mÃ©langer avec Ã©pices",
+      "RÃ´tir 25-30 minutes en remuant",
+      "Laisser refroidir",
+      "Servir"
+    ],
+    "tags": [
+      "Pois Chiches",
+      "Snack",
+      "ProtÃ©ines"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chef_knife_and_fork.svg"
   },
   {
-    "title": "Pâtes aux Tomates Cerises",
+    "title": "PÃ¢tes aux Tomates Cerises",
     "difficulty": "facile",
     "prep_time": 10,
     "cook_time": 12,
     "servings": 4,
-    "ingredients": ["400g de pâtes", "400g de tomates cerises", "4 gousses d'ail", "Basil frais", "Huile d'olive", "Sel et poivre"],
-    "steps": ["Cuire les pâtes", "Faire revenir ail et tomates", "Ajouter basil", "Mélanger avec pâtes", "Servir chaud"],
-    "tags": ["Pâtes", "Tomates", "Été"]
+    "ingredients": [
+      "400g de pÃ¢tes",
+      "400g de tomates cerises",
+      "4 gousses d'ail",
+      "Basil frais",
+      "Huile d'olive",
+      "Sel et poivre"
+    ],
+    "steps": [
+      "Cuire les pÃ¢tes",
+      "Faire revenir ail et tomates",
+      "Ajouter basil",
+      "MÃ©langer avec pÃ¢tes",
+      "Servir chaud"
+    ],
+    "tags": [
+      "PÃ¢tes",
+      "Tomates",
+      "Ã‰tÃ©"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chef_knife_and_fork.svg"
   },
   {
-    "title": "Riz Basmati Épicé",
+    "title": "Riz Basmati Ã‰picÃ©",
     "difficulty": "moyen",
     "prep_time": 10,
     "cook_time": 20,
     "servings": 4,
-    "ingredients": ["300g de riz basmati", "1 oignon", "600ml de bouillon", "1 bâton de cannelle", "5 clous de girofle", "2 feuilles de laurier"],
-    "steps": ["Faire revenir oignon et riz", "Ajouter épices et bouillon", "Cuire 15-18 minutes", "Laisser reposer", "Aérer et servir"],
-    "tags": ["Riz", "Épices", "Indien"]
+    "ingredients": [
+      "300g de riz basmati",
+      "1 oignon",
+      "600ml de bouillon",
+      "1 bÃ¢ton de cannelle",
+      "5 clous de girofle",
+      "2 feuilles de laurier"
+    ],
+    "steps": [
+      "Faire revenir oignon et riz",
+      "Ajouter Ã©pices et bouillon",
+      "Cuire 15-18 minutes",
+      "Laisser reposer",
+      "AÃ©rer et servir"
+    ],
+    "tags": [
+      "Riz",
+      "Ã‰pices",
+      "Indien"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Steamed_white_rice.jpg"
   },
   {
-    "title": "Frittata aux Légumes",
+    "title": "Frittata aux LÃ©gumes",
     "difficulty": "moyen",
     "prep_time": 15,
     "cook_time": 25,
     "servings": 4,
-    "ingredients": ["8 œufs", "1 poivron", "1 courgette", "1 oignon", "150g de champignons", "Fromage", "Huile d'olive"],
-    "steps": ["Faire revenir légumes", "Verser œufs battus dessus", "Commencer à la poêle", "Finir au four 15 minutes", "Servir"],
-    "tags": ["Œufs", "Complet", "Espagnol"]
+    "ingredients": [
+      "8 Å“ufs",
+      "1 poivron",
+      "1 courgette",
+      "1 oignon",
+      "150g de champignons",
+      "Fromage",
+      "Huile d'olive"
+    ],
+    "steps": [
+      "Faire revenir lÃ©gumes",
+      "Verser Å“ufs battus dessus",
+      "Commencer Ã  la poÃªle",
+      "Finir au four 15 minutes",
+      "Servir"
+    ],
+    "tags": [
+      "Å’ufs",
+      "Complet",
+      "Espagnol"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chef_knife_and_fork.svg"
   },
   {
-    "title": "Velouté de Butternut",
+    "title": "VeloutÃ© de Butternut",
     "difficulty": "moyen",
     "prep_time": 15,
     "cook_time": 30,
     "servings": 4,
-    "ingredients": ["1kg de butternut", "1 oignon", "750ml de bouillon", "200ml de crème", "2 gousses d'ail", "Thym"],
-    "steps": ["Découper et rôtir la butternut", "Faire revenir oignon et ail", "Ajouter butternut et bouillon", "Cuire 20 minutes", "Mixer", "Ajouter crème", "Servir"],
-    "tags": ["Soupe", "Butternut", "Automne"]
+    "ingredients": [
+      "1kg de butternut",
+      "1 oignon",
+      "750ml de bouillon",
+      "200ml de crÃ¨me",
+      "2 gousses d'ail",
+      "Thym"
+    ],
+    "steps": [
+      "DÃ©couper et rÃ´tir la butternut",
+      "Faire revenir oignon et ail",
+      "Ajouter butternut et bouillon",
+      "Cuire 20 minutes",
+      "Mixer",
+      "Ajouter crÃ¨me",
+      "Servir"
+    ],
+    "tags": [
+      "Soupe",
+      "Butternut",
+      "Automne"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chef_knife_and_fork.svg"
   },
   {
     "title": "Omelette Tomates Basil",
@@ -445,9 +1304,27 @@
     "prep_time": 5,
     "cook_time": 8,
     "servings": 2,
-    "ingredients": ["4 œufs", "2 tomates", "Basil frais", "Fromage parmesan", "Huile d'olive", "Sel et poivre"],
-    "steps": ["Battre les œufs", "Faire chauffer l'huile", "Verser œufs et garnir", "Bien pliée", "Servir immédiatement"],
-    "tags": ["Œufs", "Tomates", "Italien"]
+    "ingredients": [
+      "4 Å“ufs",
+      "2 tomates",
+      "Basil frais",
+      "Fromage parmesan",
+      "Huile d'olive",
+      "Sel et poivre"
+    ],
+    "steps": [
+      "Battre les Å“ufs",
+      "Faire chauffer l'huile",
+      "Verser Å“ufs et garnir",
+      "Bien pliÃ©e",
+      "Servir immÃ©diatement"
+    ],
+    "tags": [
+      "Å’ufs",
+      "Tomates",
+      "Italien"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Omelette.jpg"
   },
   {
     "title": "Pois Chiches Curry",
@@ -455,19 +1332,57 @@
     "prep_time": 10,
     "cook_time": 20,
     "servings": 4,
-    "ingredients": ["400g de pois chiches", "400ml de lait de coco", "1 oignon", "2 c.à.s de curry", "3 gousses d'ail", "Gingembre", "Coriandre"],
-    "steps": ["Faire revenir oignon, ail et gingembre", "Ajouter curry et pois chiches", "Verser lait de coco", "Cuire 15 minutes", "Ajouter coriandre", "Servir"],
-    "tags": ["Pois Chiches", "Curry", "Indien"]
+    "ingredients": [
+      "400g de pois chiches",
+      "400ml de lait de coco",
+      "1 oignon",
+      "2 c.Ã .s de curry",
+      "3 gousses d'ail",
+      "Gingembre",
+      "Coriandre"
+    ],
+    "steps": [
+      "Faire revenir oignon, ail et gingembre",
+      "Ajouter curry et pois chiches",
+      "Verser lait de coco",
+      "Cuire 15 minutes",
+      "Ajouter coriandre",
+      "Servir"
+    ],
+    "tags": [
+      "Pois Chiches",
+      "Curry",
+      "Indien"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Curry.jpg"
   },
   {
-    "title": "Pâtes Tomate Olive",
+    "title": "PÃ¢tes Tomate Olive",
     "difficulty": "facile",
     "prep_time": 10,
     "cook_time": 12,
     "servings": 4,
-    "ingredients": ["400g de pâtes", "400g de tomates", "150g d'olives noires", "4 gousses d'ail", "Capres", "Huile d'olive"],
-    "steps": ["Cuire les pâtes", "Faire sauce: tomates, olives, capres", "Ajouter ail et huile", "Mélanger", "Servir"],
-    "tags": ["Pâtes", "Méditerranéen", "Rapide"]
+    "ingredients": [
+      "400g de pÃ¢tes",
+      "400g de tomates",
+      "150g d'olives noires",
+      "4 gousses d'ail",
+      "Capres",
+      "Huile d'olive"
+    ],
+    "steps": [
+      "Cuire les pÃ¢tes",
+      "Faire sauce: tomates, olives, capres",
+      "Ajouter ail et huile",
+      "MÃ©langer",
+      "Servir"
+    ],
+    "tags": [
+      "PÃ¢tes",
+      "MÃ©diterranÃ©en",
+      "Rapide"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chef_knife_and_fork.svg"
   },
   {
     "title": "Carottes Miel Thym",
@@ -475,8 +1390,24 @@
     "prep_time": 10,
     "cook_time": 20,
     "servings": 4,
-    "ingredients": ["800g de carottes", "2 c.à.s de miel", "Thym frais", "Huile d'olive", "Sel et poivre"],
-    "steps": ["Tailler carottes", "Mélanger huile, miel et thym", "Rôtir 18-20 minutes", "Servir chaud"],
-    "tags": ["Carottes", "Miel", "Côté"]
+    "ingredients": [
+      "800g de carottes",
+      "2 c.Ã .s de miel",
+      "Thym frais",
+      "Huile d'olive",
+      "Sel et poivre"
+    ],
+    "steps": [
+      "Tailler carottes",
+      "MÃ©langer huile, miel et thym",
+      "RÃ´tir 18-20 minutes",
+      "Servir chaud"
+    ],
+    "tags": [
+      "Carottes",
+      "Miel",
+      "CÃ´tÃ©"
+    ],
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chef_knife_and_fork.svg"
   }
 ]
