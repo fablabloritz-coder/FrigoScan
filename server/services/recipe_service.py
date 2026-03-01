@@ -1,6 +1,6 @@
 """
 FrigoScan — Service de recettes.
-Recherche de recettes en ligne (TheMealDB) et base locale de secours.
+Recherche de recettes en ligne (Marmiton API).
 Calcul du score de correspondance avec le contenu du frigo.
 """
 
@@ -10,6 +10,12 @@ import logging
 import re
 from pathlib import Path
 from typing import Optional
+
+from .marmiton_service import (
+    search_marmiton_recipes,
+    get_random_marmiton_recipes,
+    get_marmiton_categories,
+)
 
 logger = logging.getLogger("frigoscan.recipes")
 
@@ -503,43 +509,25 @@ def load_local_recipes() -> list[dict]:
 
 
 async def search_recipes_online(query: str) -> list[dict]:
-    """Recherche de recettes via TheMealDB."""
+    """Recherche de recettes via Marmiton API."""
     try:
-        async with httpx.AsyncClient(timeout=TIMEOUT) as client:
-            resp = await client.get(MEALDB_SEARCH, params={"s": query})
-            if resp.status_code != 200:
-                return []
-            data = resp.json()
-            meals = data.get("meals") or []
-            # Traduire toutes les recettes de manière asynchrone
-            recipes = []
-            for m in meals:
-                recipe = _normalize_mealdb(m)
-                recipe = await _translate_recipe_async(recipe)
-                recipes.append(recipe)
-            return recipes
+        recipes = await search_marmiton_recipes(query)
+        logger.info(f"Marmiton: {len(recipes)} recettes trouvées pour '{query}'")
+        return recipes
     except Exception as e:
-        logger.warning(f"Erreur recherche recettes: {e}")
+        logger.warning(f"Erreur recherche recettes Marmiton: {e}")
         return []
 
 
 async def get_random_recipes(count: int = 5) -> list[dict]:
-    """Récupère des recettes aléatoires."""
-    recipes = []
+    """Récupère des recettes aléatoires via Marmiton API."""
     try:
-        async with httpx.AsyncClient(timeout=TIMEOUT) as client:
-            for _ in range(count):
-                resp = await client.get(MEALDB_RANDOM)
-                if resp.status_code == 200:
-                    data = resp.json()
-                    meals = data.get("meals") or []
-                    for m in meals:
-                        recipe = _normalize_mealdb(m)
-                        recipe = await _translate_recipe_async(recipe)
-                        recipes.append(recipe)
+        recipes = await get_random_marmiton_recipes(count)
+        logger.info(f"Marmiton: {len(recipes)} recettes aléatoires récupérées")
+        return recipes
     except Exception as e:
-        logger.warning(f"Erreur recettes aléatoires: {e}")
-    return recipes
+        logger.warning(f"Erreur recettes aléatoires Marmiton: {e}")
+        return []
 
 
 def _normalize_mealdb(meal: dict) -> dict:
