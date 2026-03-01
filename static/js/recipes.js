@@ -81,7 +81,9 @@
         'Beef': '🥩', 'Chicken': '🍗', 'Dessert': '🍰', 'Lamb': '🐑',
         'Pasta': '🍝', 'Pork': '🥓', 'Seafood': '🦐', 'Side': '🥗',
         'Starter': '🥣', 'Vegetarian': '🥬', 'Vegan': '🌱',
-        'Breakfast': '🥞', 'Miscellaneous': '🍽️'
+        'Breakfast': '🥞', 'Miscellaneous': '🍽️',
+        'lunch': '🍽️', 'dinner': '🍖', 'soup': '🍲',
+        'salad': '🥗', 'rice': '🍚', 'curry': '🍛', 'cake': '🎂'
     };
 
     async function loadCategoryFilter() {

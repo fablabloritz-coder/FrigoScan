@@ -93,14 +93,14 @@ def swap_entries(payload: dict):
         b = db.execute("SELECT * FROM weekly_menu WHERE id=?", (id_b,)).fetchone()
         if not a or not b:
             raise HTTPException(404, "Entrée(s) introuvable(s).")
-        # Échanger recipe_id, recipe_title, notes, servings (garder le jour/repas en place)
+        # Échanger recipe_id, recipe_title, notes, servings, is_pinned, recipe_data_json
         db.execute(
-            "UPDATE weekly_menu SET recipe_id=?, recipe_title=?, notes=?, servings=? WHERE id=?",
-            (b["recipe_id"], b["recipe_title"], b["notes"], b["servings"], id_a)
+            "UPDATE weekly_menu SET recipe_id=?, recipe_title=?, notes=?, servings=?, is_pinned=?, recipe_data_json=? WHERE id=?",
+            (b["recipe_id"], b["recipe_title"], b["notes"], b["servings"], b["is_pinned"], b["recipe_data_json"], id_a)
         )
         db.execute(
-            "UPDATE weekly_menu SET recipe_id=?, recipe_title=?, notes=?, servings=? WHERE id=?",
-            (a["recipe_id"], a["recipe_title"], a["notes"], a["servings"], id_b)
+            "UPDATE weekly_menu SET recipe_id=?, recipe_title=?, notes=?, servings=?, is_pinned=?, recipe_data_json=? WHERE id=?",
+            (a["recipe_id"], a["recipe_title"], a["notes"], a["servings"], a["is_pinned"], a["recipe_data_json"], id_b)
         )
         db.commit()
         return {"success": True, "message": "Entrées échangées."}
@@ -121,6 +121,13 @@ def get_menu_recipe_detail(entry_id: int):
             recipe = db.execute("SELECT * FROM recipes WHERE id=?", (recipe_id,)).fetchone()
             if recipe:
                 return {"success": True, "recipe": dict_from_row(recipe)}
+        # Essayer recipe_data_json (recettes issues de TheMealDB)
+        if entry["recipe_data_json"]:
+            try:
+                recipe_data = json.loads(entry["recipe_data_json"])
+                return {"success": True, "recipe": recipe_data}
+            except Exception:
+                pass
         # Pas de recette en base — retourner les infos basiques
         return {
             "success": True,
@@ -282,10 +289,11 @@ async def generate_menu(week_start: str = None, servings: int = 4, mode: str = "
                         recipe = all_recipes[recipe_idx % len(all_recipes)] if all_recipes else None
                         title = recipe.get("title", "Repas libre") if recipe else "Repas libre"
                     recipe_id = recipe.get("id") if recipe else None
+                    recipe_data = json.dumps(recipe) if recipe else None
                     db.execute(
-                        """INSERT INTO weekly_menu (week_start, day_of_week, meal_type, recipe_id, recipe_title, servings)
-                           VALUES (?, ?, ?, ?, ?, ?)""",
-                        (week_start, day, meal, recipe_id, title, servings)
+                        """INSERT INTO weekly_menu (week_start, day_of_week, meal_type, recipe_id, recipe_title, servings, recipe_data_json)
+                           VALUES (?, ?, ?, ?, ?, ?, ?)""",
+                        (week_start, day, meal, recipe_id, title, servings, recipe_data)
                     )
                     menu.append({"day_of_week": day, "meal_type": meal, "recipe_title": title, "recipe_id": recipe_id})
                     recipe_idx += 1
@@ -344,20 +352,30 @@ def generate_shopping_from_menu(week_start: str = None):
         )
         fridge_names = set(item["name"].lower() for item in fridge_items)
 
+        basic_ingredients = {"water", "salt", "pepper", "oil", "eau", "sel", "poivre", "huile"}
         needed = {}
         for row in menu_rows:
+            ingredients = None
             recipe_id = row["recipe_id"]
             if recipe_id:
                 recipe = db.execute("SELECT * FROM recipes WHERE id=?", (recipe_id,)).fetchone()
                 if recipe:
                     try:
                         ingredients = json.loads(recipe["ingredients_json"])
-                        for ing in ingredients:
-                            name = ing.get("name", "").strip()
-                            if name.lower() not in fridge_names:
-                                needed[name.lower()] = {"name": name, "measure": ing.get("measure", "")}
                     except Exception:
                         pass
+            # Fallback : recipe_data_json (recettes TheMealDB)
+            if ingredients is None and row["recipe_data_json"]:
+                try:
+                    recipe_data = json.loads(row["recipe_data_json"])
+                    ingredients = json.loads(recipe_data.get("ingredients_json", "[]"))
+                except Exception:
+                    pass
+            if ingredients:
+                for ing in ingredients:
+                    name = ing.get("name", "").strip()
+                    if name and name.lower() not in fridge_names and name.lower() not in basic_ingredients:
+                        needed[name.lower()] = {"name": name, "measure": ing.get("measure", "")}
 
         shopping = list(needed.values())
         return {"success": True, "shopping_list": shopping, "count": len(shopping)}

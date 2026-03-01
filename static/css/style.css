@@ -751,13 +751,13 @@ a { color: var(--primary); text-decoration: none; }
     box-shadow: inset 0 0 0 2px var(--primary);
     border-radius: var(--radius-sm);
 }
-.menu-meal-type { font-weight: 600; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; min-width: 70px; }
-.menu-meal-recipe { font-weight: 500; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.menu-meal-type { font-weight: 600; font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; min-width: 55px; flex-shrink: 0; }
+.menu-meal-recipe { font-weight: 500; flex: 1; min-width: 0; word-break: break-word; line-height: 1.3; font-size: 0.9rem; }
 .menu-meal-recipe[style*="cursor: pointer"]:hover { color: var(--primary); text-decoration: underline; }
-.menu-meal-actions { display: flex; gap: 4px; flex-shrink: 0; }
+.menu-meal-actions { display: flex; gap: 3px; flex-shrink: 0; }
 .menu-action-btn {
-    width: 28px; height: 28px; padding: 0; display: flex; align-items: center; justify-content: center;
-    border-radius: 50%; font-size: 0.75rem; background: var(--bg-hover); border: 1px solid var(--border);
+    width: 26px; height: 26px; padding: 0; display: flex; align-items: center; justify-content: center;
+    border-radius: 50%; font-size: 0.7rem; background: var(--bg-hover); border: 1px solid var(--border);
     color: var(--text-muted); transition: all 0.15s;
 }
 .menu-action-btn:hover { background: var(--primary); color: #fff; border-color: var(--primary); }

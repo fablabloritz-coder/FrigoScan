@@ -183,12 +183,10 @@
     // ---- Détail d'une recette du menu ----
     async function showMenuRecipeDetail(entry) {
         let recipe = null;
-        if (entry.recipe_id) {
-            try {
-                const data = await FrigoScan.API.get(`/api/menus/${entry.id}/recipe`);
-                if (data.success && data.recipe) recipe = data.recipe;
-            } catch (e) {}
-        }
+        try {
+            const data = await FrigoScan.API.get(`/api/menus/${entry.id}/recipe`);
+            if (data.success && data.recipe) recipe = data.recipe;
+        } catch (e) {}
 
         if (!recipe) {
             recipe = {
@@ -376,17 +374,23 @@
     }
 
     async function addAllToShopping() {
-        FrigoScan.toast('Génération de la liste de courses...', 'info');
-        const data = await FrigoScan.API.get(`/api/menus/shopping-list?week_start=${currentWeekStart}`);
-        if (data.success) {
-            const items = data.shopping_list || [];
-            if (items.length === 0) { FrigoScan.toast('Aucun ingrédient manquant.', 'info'); return; }
-            let added = 0;
-            for (const item of items) {
-                const res = await FrigoScan.API.post('/api/shopping/', { product_name: item.name, quantity: 1, unit: item.measure || 'unité' });
-                if (res.success) added++;
+        try {
+            const data = await FrigoScan.API.get(`/api/menus/shopping-list?week_start=${currentWeekStart}`);
+            if (data.success) {
+                const items = data.shopping_list || [];
+                if (items.length === 0) { FrigoScan.toast('Aucun ingrédient manquant \u2014 votre frigo a tout !', 'info'); return; }
+                FrigoScan.toast(`Ajout de ${items.length} ingrédient(s) aux courses...`, 'info');
+                let added = 0;
+                for (const item of items) {
+                    const res = await FrigoScan.API.post('/api/shopping/', { product_name: item.name, quantity: 1, unit: item.measure || 'unité' });
+                    if (res.success) added++;
+                }
+                FrigoScan.toast(`${added} ingrédient(s) ajouté(s) aux courses !`, 'success');
+            } else {
+                FrigoScan.toast('Erreur lors de la génération de la liste.', 'error');
             }
-            FrigoScan.toast(`${added} ingrédient(s) ajouté(s) aux courses !`, 'success');
+        } catch (e) {
+            FrigoScan.toast('Erreur de connexion.', 'error');
         }
     }
 

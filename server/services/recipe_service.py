@@ -204,49 +204,88 @@ def _translate_recipe(recipe: dict) -> dict:
 
 # Mapping des catégories françaises pour l'UI
 RECIPE_CATEGORIES_FR = [
-    {"id": "Beef", "label": "Bœuf"},
-    {"id": "Chicken", "label": "Poulet"},
-    {"id": "Dessert", "label": "Dessert"},
-    {"id": "Lamb", "label": "Agneau"},
-    {"id": "Pasta", "label": "Pâtes"},
-    {"id": "Pork", "label": "Porc"},
-    {"id": "Seafood", "label": "Fruits de mer"},
-    {"id": "Side", "label": "Accompagnement"},
-    {"id": "Starter", "label": "Entrée"},
-    {"id": "Vegetarian", "label": "Végétarien"},
-    {"id": "Vegan", "label": "Végan"},
-    {"id": "Breakfast", "label": "Petit-déjeuner"},
-    {"id": "Miscellaneous", "label": "Divers"},
+    # Catégories TheMealDB (filtre par catégorie)
+    {"id": "Chicken", "label": "Poulet", "type": "filter"},
+    {"id": "Beef", "label": "Bœuf", "type": "filter"},
+    {"id": "Pork", "label": "Porc", "type": "filter"},
+    {"id": "Lamb", "label": "Agneau", "type": "filter"},
+    {"id": "Seafood", "label": "Fruits de mer", "type": "filter"},
+    {"id": "Pasta", "label": "Pâtes", "type": "filter"},
+    {"id": "Vegetarian", "label": "Végétarien", "type": "filter"},
+    {"id": "Vegan", "label": "Végan", "type": "filter"},
+    {"id": "Dessert", "label": "Dessert", "type": "filter"},
+    {"id": "Breakfast", "label": "Petit-déjeuner", "type": "filter"},
+    {"id": "Starter", "label": "Entrée", "type": "filter"},
+    {"id": "Side", "label": "Accompagnement", "type": "filter"},
+    # Par type de repas (multi-recherche pour plus de variété)
+    {"id": "lunch", "label": "Déjeuner", "type": "multi", "terms": ["salad", "sandwich", "soup", "wrap", "omelette", "quiche", "lunch"]},
+    {"id": "dinner", "label": "Dîner", "type": "multi", "terms": ["stew", "roast", "curry", "casserole", "pie", "gratin", "dinner"]},
+    # Par mot-clé (recherche)
+    {"id": "soup", "label": "Soupes", "type": "search"},
+    {"id": "salad", "label": "Salades", "type": "search"},
+    {"id": "rice", "label": "Riz", "type": "search"},
+    {"id": "curry", "label": "Curry", "type": "search"},
+    {"id": "cake", "label": "Gâteaux", "type": "search"},
+    {"id": "Miscellaneous", "label": "Divers", "type": "filter"},
 ]
 
 
 async def get_recipes_by_category(category: str, max_results: int = 12) -> list[dict]:
-    """Récupère des recettes par catégorie TheMealDB, puis les traduit."""
+    """Récupère des recettes par catégorie (filter TheMealDB), recherche ou multi-recherche."""
+    import random as rnd
+
+    # Chercher le type de catégorie
+    cat_info = next((c for c in RECIPE_CATEGORIES_FR if c["id"] == category), None)
+    cat_type = (cat_info or {}).get("type", "filter")
+
+    if cat_type == "search":
+        results = await search_recipes_online(category)
+        rnd.shuffle(results)
+        return results[:max_results]
+
+    if cat_type == "multi":
+        terms = (cat_info or {}).get("terms", [category])
+        all_recipes = []
+        rnd.shuffle(terms)
+        for term in terms[:4]:
+            results = await search_recipes_online(term)
+            all_recipes.extend(results)
+        rnd.shuffle(all_recipes)
+        seen = set()
+        unique = []
+        for r in all_recipes:
+            t = r.get("title", "").lower().strip()
+            if t and t not in seen:
+                seen.add(t)
+                unique.append(r)
+        return unique[:max_results]
+
+    # Type "filter" — catégorie TheMealDB
     recipes = []
     try:
         async with httpx.AsyncClient(timeout=TIMEOUT) as client:
-            # filter.php retourne seulement id, title, image — on doit ensuite lookup chaque recette
             resp = await client.get(MEALDB_FILTER, params={"c": category})
             if resp.status_code != 200:
                 return []
             data = resp.json()
             meals = data.get("meals") or []
-            # Limiter et lookup les détails
-            import random as rnd
             rnd.shuffle(meals)
             meals = meals[:max_results]
             for meal in meals:
                 meal_id = meal.get("idMeal")
                 if not meal_id:
                     continue
-                detail_resp = await client.get(MEALDB_LOOKUP, params={"i": meal_id})
-                if detail_resp.status_code == 200:
-                    detail_data = detail_resp.json()
-                    detail_meals = detail_data.get("meals") or []
-                    if detail_meals:
-                        recipe = _normalize_mealdb(detail_meals[0])
-                        recipe = _translate_recipe(recipe)
-                        recipes.append(recipe)
+                try:
+                    detail_resp = await client.get(MEALDB_LOOKUP, params={"i": meal_id})
+                    if detail_resp.status_code == 200:
+                        detail_data = detail_resp.json()
+                        detail_meals = detail_data.get("meals") or []
+                        if detail_meals:
+                            recipe = _normalize_mealdb(detail_meals[0])
+                            recipe = _translate_recipe(recipe)
+                            recipes.append(recipe)
+                except Exception:
+                    continue
     except Exception as e:
         logger.warning(f"Erreur recettes par catégorie: {e}")
     return recipes
