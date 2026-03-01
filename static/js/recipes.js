@@ -489,7 +489,7 @@
         const basicIngredients = ["water", "salt", "pepper", "oil", "eau", "sel", "poivre", "huile"];
 
         const imgHtml = recipe.image_url
-            ? `<img src="${recipe.image_url}" alt="${recipe.title}" style="width:100%;max-height:300px;object-fit:cover;border-radius:var(--radius-sm);margin-bottom:16px;">`
+            ? `<img src="${recipe.image_url}" alt="${recipe.title}" onerror="this.style.display='none'" style="width:100%;max-height:300px;object-fit:cover;border-radius:var(--radius-sm);margin-bottom:16px;">`
             : '';
 
         // Ajuster les quantités d'ingrédients selon le ratio de portions
@@ -569,8 +569,7 @@
                    </button>`
                 : ''}
 
-            <h3 style="margin-bottom:8px;">Instructions</h3>
-            <div style="white-space:pre-line;line-height:1.7;">${recipe.instructions || 'Aucune instruction disponible.'}</div>
+            ${recipe.instructions ? `<h3 style="margin-bottom:8px;">Instructions</h3><div style="white-space:pre-line;line-height:1.7;">${recipe.instructions}</div>` : ''}
 
             ${recipe.source_url ? `<a href="${recipe.source_url}" target="_blank" class="btn btn-secondary" style="margin-top:16px;"><i class="fas fa-external-link-alt"></i> Voir la source</a>` : ''}
 

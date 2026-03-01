@@ -437,53 +437,6 @@
                     <p>Aucune recette bannie. Bannissez des recettes depuis leur fiche détaillée pour qu'elles n'apparaissent plus.</p>
                 </div>
             </div>
-
-            <!-- Détail recette (modal) -->
-            <div id="recipe-detail-modal" class="modal hidden">
-                <div class="modal-content modal-lg">
-                    <button class="modal-close" onclick="FrigoScan.Recipes.closeDetail()">
-                        <i class="fas fa-times"></i>
-                    </button>
-                    <div id="recipe-detail-content"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================================================ -->
-        <!-- MENU DE LA SEMAINE -->
-        <!-- ============================================================ -->
-        <section id="view-menu" class="view">
-            <div class="menu-header">
-                <button id="btn-menu-prev" class="btn btn-sm"><i class="fas fa-chevron-left"></i></button>
-                <h3 id="menu-week-label">Semaine du --</h3>
-                <button id="btn-menu-next" class="btn btn-sm"><i class="fas fa-chevron-right"></i></button>
-            </div>
-            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;">
-                <button id="btn-generate-menu-fridge" class="btn btn-success">
-                    <i class="fas fa-door-open"></i> Générer selon mon frigo
-                </button>
-                <button id="btn-generate-menu-scratch" class="btn btn-primary">
-                    <i class="fas fa-magic"></i> Générer de zéro
-                </button>
-                <button id="btn-clear-menu" class="btn btn-danger btn-sm">
-                    <i class="fas fa-trash"></i> Vider la semaine
-                </button>
-                <button id="btn-menu-shopping" class="btn btn-warning btn-sm">
-                    <i class="fas fa-cart-plus"></i> Tout ajouter aux courses
-                </button>
-            </div>
-            <div id="menu-grid" class="menu-grid"></div>
-            
-            <!-- Modal de progression de génération -->
-            <div id="menu-generation-progress" class="modal hidden" style="z-index:9999;">
-                <div class="modal-content" style="max-width:300px;text-align:center;">
-                    <h3>Génération du menu en cours...</h3>
-                    <div class="progress-bar-container" style="margin:20px 0;">
-                        <div class="progress-bar" style="width:0%;"></div>
-                    </div>
-                    <span class="progress-text" style="font-size:0.9rem;">0%</span>
-                </div>
-            </div>
         </section>
 
         <!-- ============================================================ -->
@@ -776,8 +729,18 @@
         </section>
     </main>
 
+    <!-- ================================================================== -->    <!-- MODAL DÉTAIL RECETTE (Partagée entre Recettes et Menu) -->
     <!-- ================================================================== -->
-    <!-- TOAST NOTIFICATIONS -->
+    <div id="recipe-detail-modal" class="modal hidden">
+        <div class="modal-content modal-lg">
+            <button class="modal-close" onclick="FrigoScan.Recipes.closeDetail()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div id="recipe-detail-content"></div>
+        </div>
+    </div>
+
+    <!-- ================================================================== -->    <!-- TOAST NOTIFICATIONS -->
     <!-- ================================================================== -->
     <div id="toast-container" class="toast-container"></div>
 
@@ -804,7 +767,6 @@
     <script src="/static/js/manual-add.js?v=2.9.9"></script>
     <script src="/static/js/fridge.js?v=2.9.9"></script>
     <script src="/static/js/recipes.js?v=2.9.9"></script>
-    <script src="/static/js/menus.js?v=2.9.9"></script>
     <script src="/static/js/seasonal.js?v=2.9.9"></script>
     <script src="/static/js/shopping.js?v=2.9.9"></script>
     <script src="/static/js/stats.js?v=2.9.9"></script>

@@ -150,7 +150,6 @@ FrigoScan.navigate = function (viewName) {
         'manual-add': `${logo} <span>Ajout manuel</span>`,
         fridge: `${logo} <span>Mon frigo</span>`,
         recipes: `${logo} <span>Recettes</span>`,
-        menu: `${logo} <span>Menu semaine</span>`,
         seasonal: `${logo} <span>De saison</span>`,
         shopping: `${logo} <span>Liste de courses</span>`,
         stats: `${logo} <span>Statistiques</span>`,
@@ -177,7 +176,6 @@ FrigoScan.navigate = function (viewName) {
                 });
             }
         },
-        menu: () => FrigoScan.Menus && FrigoScan.Menus.load(),
         seasonal: () => FrigoScan.Seasonal && FrigoScan.Seasonal.load(),
         shopping: () => FrigoScan.Shopping && FrigoScan.Shopping.load(),
         stats: () => FrigoScan.Stats && FrigoScan.Stats.load(),

@@ -17,7 +17,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import logging
 
 from server.database import init_db
-from server.routers import scan, fridge, recipes, menus, shopping, stats, settings, export_import, seasonal
+from server.routers import scan, fridge, recipes, shopping, stats, settings, export_import, seasonal
 
 # ---------------------------------------------------------------------------
 # Configuration
@@ -60,7 +60,6 @@ app.add_middleware(
 app.include_router(scan.router)
 app.include_router(fridge.router)
 app.include_router(recipes.router)
-app.include_router(menus.router)
 app.include_router(shopping.router)
 app.include_router(stats.router)
 app.include_router(settings.router)
